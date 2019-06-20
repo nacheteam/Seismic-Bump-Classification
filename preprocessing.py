@@ -55,7 +55,7 @@ test = open("./dataset/test.dat", "w")
 test.write("@data\n")
 for d in data_test:
     for e in d:
-        test.write(str(e))
+        test.write(str(e) + " ")
     test.write("\n")
 test.write("@labels\n")
 for l in labels_test:
@@ -66,7 +66,7 @@ train = open("./dataset/train.dat", "w")
 train.write("@data\n")
 for d in data_train_bal:
     for e in d:
-        train.write(str(e))
+        train.write(str(e) + " ")
     train.write("\n")
 train.write("@labels\n")
 for l in labels_train_bal:
